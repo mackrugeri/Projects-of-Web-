@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="nav.css">
+<link rel="stylesheet" type="text/css" href="login.css">
+
+</head>
+<body>
+  <header class="v-header container">
+    <div class="fullscreen-video-wrap">
+     <video autoplay muted loop id="myVideo">
+        <source src="rain.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="header-overlay"></div>
+    <div class="header-content text-md-center">
+       <div class="wrap">
+  </div>
+          <h1 class="control">Welcome E-sports Website</h1>
+          <p >“The strength of the team is each individual member. The strength of each member is the team.”</p>
+    <!--  <a class="btn">Sign in</a>
+          <a class="btn">Sign up</a> -->
+          <button class="bttn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+          
+          <!-- <button class="btn ">sign up</button> -->
+
+    <div id="id01" class="modal">
+      
+      <form class="modal-content animate" action="Sigin-page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="images.jpg" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+        	  <select style="color:black;" name = "Status">
+  	          <option value = "state">Status</option>
+  					  <option value="Emp">Sports Man</option>
+  					  <option value="Cus">Coach</option>
+              <option value="Cus">Admin</option>
+			  </select>
+          <!-- <label for="uname"><b>Username</b></label> -->
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <!-- <label for="psw"><b>Password</b></label> -->
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <!-- <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label> -->
+            
+          <button class="bttn" type="submit">Login</button>
+        </div>
+      </form>
+    </div>
+        <button class="bttn" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign up</button>
+
+    <div id="id02" class="modal">
+      
+      <form class="modal-contenting animate" action="Signup.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="images.jpg" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+    <select style="color:black;" name = "Acctype">
+      		  <option class = "slect">Game</option>
+			  <option value="Default Account">Tennis</option>
+			  <option value="Saving Account">Badminton</option>
+			  <option value="Current Account">Table tennis</option>
+        <option value="Current Account">Squash</option>
+	  </select>
+    <select style="color:black;" name = "Acctype">
+            <option class = "slect">Ranking</option>
+        <option value="Default Account">Beginneer level</option>
+        <option value="Saving Account">Medium level</option>
+        <option value="Current Account">Advance level</option>
+        <option value="Current Account">Squash</option>
+    </select>
+          <input type="text" placeholder="Enter your Name" name="Nme" required>
+          <input type="Password" placeholder="Password" name="Password" required>
+          <input type="text" name="Address" placeholder="Address">
+          <!-- <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label> -->
+            
+          <button class="bttn" type="submit">Login</button>
+        </div>
+
+          <!-- <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"></button> -->
+      </form>
+    </div>
+    </div>
+  </header>
+  <script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+var modal1 = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal1) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

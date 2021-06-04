@@ -1,0 +1,196 @@
+@charset "utf-8";
+@import url("fontawesome-free/css/fontawesome-all.min.css");
+@import url("framework.css");
+
+.row0, .row0 a{}
+.row1, .row1 a{}
+.row2, .row2 a{}
+.row3, .row3 a{}
+.row4, .row4 a{}
+.row5, .row5 a{}/
+#header{}
+
+
+
+
+/* Page Intro
+--------------------------------------------------------------------------------------------------------------- */
+#pageintro{padding:0px 0 100px;}/* 280px => 80px for #introblocks negative margin */
+
+.Ai1-tag{
+	 border-radius: 4px;
+  background-color: #97A9BD;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+}
+.Ai2-tag{
+	 border-radius: 4px;
+  background-color: #A197BD;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+}
+.Ai3-tag{
+	 border-radius: 4px;
+  background-color: #BDA697;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+}
+.Ai4-tag{
+	 border-radius: 4px;
+  background-color: #97BDAe;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px; 
+}
+/* Content Area
+--------------------------------------------------------------------------------------------------------------- */
+.container{padding:0px 0;}
+
+/* Content */
+.container .content{}
+
+.sectiontitle{display:block; max-width:55%; margin:0 auto 80px; text-align:center;}
+.sectiontitle *{margin:0;}
+
+.elements{}
+.elements-three li, .elements-four li{margin-bottom:50px;}
+.elements-three li:nth-last-child(-n+3), .elements-four li:nth-last-child(-n+4){margin-bottom:0;}/* Removes bottom margin from the last line of items - margin is restored in the media queries when items stack */
+.elements-three li:nth-child(3n+1), .elements-four li:nth-child(4n+1){margin-left:0; clear:left;}/* Removes the need to add class="first" */
+.elements article{display:block; padding:30px 15px; border-radius:50px 0; text-align:center;}
+.elements article *{margin:0 0 15px 0; padding:0; line-height:1;}
+.elements article i{width:60px; height:60px; line-height:60px; margin-bottom:30px; font-size:1.6rem; text-align:center; border-radius:50%;}
+.elements article .heading{font-size:1.2rem; font-weight:700;}
+.elements article p{margin:0; line-height:normal;}
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+
+#introblocks{display:block; position:relative; margin:-160px 0 130px 0; z-index:1;}/* 160px => 80px + container padding */
+#services{}
+#services .elements article{border-radius:0;}
+
+/*--------------------------------------------------------------------------------------------------------------- */
+*, *::before, *::after{transition:all .3s ease-in-out;}
+#mainav form *{transition:none !important;}
+
+
+@media screen and (max-width:750px){/* Only the colours height has been changed */
+	.gradient{background:linear-gradient(to bottom, #F4F4F4 24%, #FFFFFF 19%, #FFFFFF 100%);}
+}
+
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#97A9BD; border-color:#97A9BD;}
+.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+
+.imgover:hover::before{background-color:rgba(151,169,189,.5);/* #97A9BD */}
+.imgover, .imgover:hover::after{color:#FFFFFF;}
+
+.logoname a{color:#FFFFFF;}
+.logoname::first-letter, .logoname span{color:#97BDAB;}
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Header */
+#header #logo a{color:inherit;}
+
+
+/* Page Intro */
+#pageintro{color:#FFFFFF;}
+/* Content Area */
+.elements article{color:#474747; background-color:#FFFFFF; box-shadow:0px 0px 15px rgba(0,0,0,.3);}
+.elements article:hover{color:#FFFFFF; background-color:#97A9BD;}/* Default */
+.elements article a i{color:#FFFFFF; background-color:#97A9BD;}/* Default */
+.elements article:hover a i{color:#97A9BD; background-color:#FFFFFF;}/* Default */
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+					
+					/*                        Color of boxs                      */
+/* ###### DELETE THE FOLLOWING IF ONLY THE DEFAULT COLOUR IS REQUIRED ###### */
+#introblocks .elements li article{color:#FFFFFF; background-color:#97A9BD;}/* Blue */
+#introblocks .elements li article a i{color:#97A9BD; background-color:#FFFFFF;}/* Blue */
+#introblocks .elements li article:hover{color:#474747; background-color:#FFFFFF !important;}
+#introblocks .elements li article:hover a i{color:#FFFFFF !important; background-color:#97A9BD;}
+#introblocks .elements li:nth-child(2) article, #introblocks .elements li:nth-child(2) article:hover a i{background-color:#A197BD;}/* Purple */
+#introblocks .elements li:nth-child(2) article a i{color:#A197BD;}/* Purple */
+#introblocks .elements li:nth-child(3) article, #introblocks .elements li:nth-child(3) article:hover a i{background-color:#BDA697;}/* Brown */
+#introblocks .elements li:nth-child(3) article a i{color:#BDA697;}/* Brown */
+#introblocks .elements li:nth-child(4) article, #introblocks .elements li:nth-child(4) article:hover a i{background-color:#97BDAB;}/* Green */
+#introblocks .elements li:nth-child(4) article a i{color:#97BDAB;}/* Green */
+@media screen and (min-width:1140px){
+	.hoc{max-width:1140px;}
+}
+
+@media screen and (min-width:978px) and (max-width:1140px){
+	.hoc{max-width:95%;}
+}
+
+@media screen and (max-width:978px){
+	.hoc{max-width:90%;}
+
+	#header{padding:30px 0;}
+	#header #logo{margin-top:0;}
+
+	#mainav{}
+	#mainav ul{display:none;}
+	#mainav form{display:block; margin-top:2px;}
+
+	#breadcrumb{}
+
+	.container{}
+	#comments input[type="reset"]{margin-top:10px;}
+	.pagination li{display:inline-block; margin:0 5px 5px 0;}
+
+	#footer{}
+
+	#copyright{}
+	#copyright p:first-of-type{margin-bottom:10px;}
+}
+
+/*////////////////////////////////////////////////////////////////  Media Quere of Boxes    //////////////////////////////////////////////////////////////////*/
+
+@media screen and (max-width:750px){
+		.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
+		.fl_left, .fl_right{display:block; float:none;}
+		.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
+		.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0;}
+
+		#header{text-align:center;}
+		#header #logo{margin:0 0 15px 0;}
+
+		#pageintro article, #pageintro article p{max-width:none;}
+		#pageintro .heading{font-size:2rem;}
+
+		.sectiontitle{max-width:none;}
+		.shout figure, .team li, #latest > li{margin:0 auto 50px;}
+		.team li, #latest li{max-width:348px;}/* Restrict the width to the one_third grid element */
+		.elements-three li:nth-last-child(-n+3), .elements-four li:nth-last-child(-n+4){margin-bottom:50px;}
+		.elements-three li:last-child, .elements-four li:last-child, .shout figure:last-child{margin-bottom:0;}
+
+		#ctdetails figure{margin-bottom:80px;}/* Gives good separation between the two elements */
+
+		#footer{padding-bottom:50px;}/* Not needed - just looks better */
+		#footer .latestimg > li, #footer .latestimg > li:nth-last-child(-n+3){display:inline-block; float:none; width:auto; margin:0 5% 5% 0;}
+		#footer .latestimg > li:last-child{margin-bottom:0;}
+		#footer .latestimg > li img{width:auto;}
+	}
+
